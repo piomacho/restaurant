@@ -7,6 +7,6 @@ from menu.serializers import MenuSerializer
 
 
 class MenuViewSet(viewsets.ModelViewSet):
-    queryset = Menu.objects.all()
+    queryset = Menu.published_all
     serializer_class = MenuSerializer
     permission_classes = [AllowAny]

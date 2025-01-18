@@ -1,0 +1,52 @@
+# Główne pliki
+.DS_Store            # MacOS metadata
+.env                 # Ignorowanie plików środowiska, upewnij się, że masz .env w repozytorium tylko jeśli chcesz!
+*.log                # Pliki logów
+*.sqlite3            # Pliki bazy danych SQLite, jeśli używasz SQLite w Django
+*.pyc                # Kompilowane pliki Pythona
+
+# Ignorowanie plików aplikacji Next.js
+restaurant-app/node_modules/
+restaurant-app/.next/
+restaurant-app/.env.local  # Ignorowanie lokalnych plików .env dla restaurant-appu
+restaurant-app/.env.development
+restaurant-app/.env.production
+restaurant-app/package-lock.json  # Jeśli nie chcesz śledzić package-lock.json w repozytorium
+restaurant-app/.npmrc
+
+# Ignorowanie plików aplikacji Django
+menu-api/__pycache__/  # Cache Pythona
+menu-api/.venv/        # Wirtualne środowisko Pythona
+menu-api/env/          # Wirtualne środowisko Pythona (jeśli używasz innego katalogu)
+menu-api/db.sqlite3    # Plik bazy danych SQLite (jeśli używasz SQLite)
+menu-api/static/       # Pliki statyczne generowane przez Django (np. CSS, JS)
+menu-api/media/        # Pliki media generowane przez Django (np. obrazy, pliki)
+
+# Ignorowanie plików kompilacji Pythona
+*.pyc
+*.pyo
+*.pyd
+__pycache__/          # Cache kompilacji
+*.db                 # Jeśli używasz bazy danych SQLite
+*.log                # Pliki logów Pythona
+*.pot                # Pliki tłumaczeń Pythona
+
+# Ignorowanie plików dotyczących testów
+restaurant-app/coverage/
+menu-api/.coverage
+
+# VSCode, IntelliJ, itp.
+.vscode/             # IDE configurations
+.idea/               # JetBrains IDE configurations
+
+# Nginx, Apache lub inne konfiguracje serwera (opcjonalnie)
+*.conf
+
+# Ignorowanie plików systemowych w systemie operacyjnym
+Thumbs.db
+Desktop.ini
+
+
+menu-api/.idea
+restaurant-app/.DS_Store
+db.sqlite3
